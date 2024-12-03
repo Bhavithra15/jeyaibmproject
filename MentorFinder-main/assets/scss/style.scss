@@ -1,0 +1,88 @@
+/* Theme Description
+-------------------------------------------------
+
+	  Theme Name:
+	  Author:
+	  Support:
+	  Description:
+	  Version:
+	  
+------------------------------------------------- 
+*/
+
+/* CSS Index
+-------------------------------------------------
+
+	1. Theme default css
+	2. header
+	3. slider
+	4. about-area
+	5. features-box
+	6. department
+	7. team
+	8. video-area
+	9. counter
+	10. footer
+
+-------------------------------------------------
+*/
+
+// Defult
+	@import 'variables';
+	@import 'mixins';
+	@import 'overlay';
+	@import 'common';
+	@import 'color';
+
+
+// Defult Element Page
+	@import 'blog_page';
+	@import 'blog';
+	@import 'contact';
+	@import 'bradcam';
+	@import 'extend';
+	@import 'elements';
+
+
+// Homepage1
+	@import 'headerMenu';
+	@import 'h1-hero';
+	@import 'team';
+	@import 'services_section';
+	@import 'cv-online';
+	@import 'apply-proces';
+	@import 'support-company';
+	@import 'featured-Jobs';
+	@import 'testimonial';
+	@import 'footer';
+
+// inner Page
+	@import 'services';
+	@import 'job_details';
+	@import 'job_listing';
+	@import 'pagination';
+	.logo-container {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.logo-container img {
+		display: block;
+		width: 100px; /* Adjust as needed */
+		height: auto;
+	}
+	
+	.logo-container::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 0, 0, 0.5); /* Red overlay */
+		mix-blend-mode: multiply; /* Blend color with the image */
+		pointer-events: none; /* Ensure clicks pass through */
+	}
+	
+
+
